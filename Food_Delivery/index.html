@@ -1,11 +1,1625 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Street Foods </title>
+    <link rel="shortcut icon" href="images/restaurant-tasty.avif" type="image/x-icon" />
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- CDN FONTS  -->
+    <link href="https://fonts.cdnfonts.com/css/elinga" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link href="https://copyfonts.com/fonts/attari-salees.html" />
+    <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
-    
+    <!--     This is the Loader -->
+    <div id="loading">
+        <img id="loading-image"
+            src="./images/dancing-taco-man_still_2x.gif"
+            alt="Loading..." />
+    </div>
+
+    <section class="header">
+
+        <a href="#" class="logo"><img src="images/Good-food.png" width="70px"> street food </a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#food">food</a>
+            <!-- <a href="#gallery">gallery</a> -->
+            <a href="#menu">menu</a>
+            <!-- <a href="#order">order</a> -->
+            <!-- <a href="#blogs">blogs</a> -->
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+    </section>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/jollof.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/bread.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/egusi.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    </section>
+
+    <a id="scrollToTop" class="btn"><i class="fas fa-caret-up"></i></a>
+    <div id="main">
+        <br />
+        <!-- Category section starts here -->
+        <section id="categorySection">
+            <div class="container">
+                <h1>
+                    <span><b>CATEGORIES</b></span>
+                </h1>
+                <div class="row gutters-40">
+                    <div class="col-lg-4 col-sm-4 col-4">
+                        <div class="product-box-layout4 momos">
+                            <div class="item-figure">
+                                <img src="./images/GettyImages.jpg" alt="Category" width="100%" height="100%" />
+                            </div>
+                            <div class="item-content">
+                                <h2 class="card-title">Fruit and vegetables</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-4 col-4">
+                        <div class="product-box-layout4 chinese">
+                            <div class="item-figure">
+                                <img src="./images/chinese.webp" alt="Category" width="100%" height="100%" />
+                            </div>
+                            <div class="item-content">
+                                <h2 class="card-title">Chinese</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-4 col-4">
+                        <div class="product-box-layout4 beverages">
+                            <div class="item-figure">
+                                <img src="./images/beverages-updated.webp" alt="Category" width="100%" height="100%" />
+                            </div>
+                            <div class="item-content">
+                                <h2 class="card-title">Beverages</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MENU STARTS HERE -->
+                <div class="menuDiv">
+                    <!-- MODAL -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row paymentInfoRow">
+                                            <div class="col paymentInfo">
+                                                <span class="checkIcon"><i class="fas fa-check-circle"></i></span>
+                                                Select Menu
+                                            </div>
+                                            <div class="col paymentInfo">
+                                                <span class="checkIcon"><i class="fa-brands fa-whatsapp"></i></span>
+                                                Place order via Whatsapp
+                                            </div>
+                                            <div class="col paymentInfo">
+                                                <span class="checkIcon"><i class="fa-brands fa-google-pay"></i>
+                                                </span>
+                                                Pay using Google Pay.
+                                            </div>
+                                        </div>
+
+                                        <hr class="cartHr" />
+
+                                        <div class="cartContentDiv">
+                                            <h1>Your Cart is Empty</h1>
+                                        </div>
+
+                                        <div class="userInfoDiv">
+                                            <div class="mb-3 px-2">
+                                                <label for="address">Address *</label> <br />
+                                                <textarea type="text" class="form-control" id="address"></textarea>
+                                            </div>
+                                            <div class="mb-3 px-2">
+                                                <label for="note">Note (optional)</label> <br />
+                                                <textarea type="text" class="form-control" id="note"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="totalAmountDiv"></div>
+                                    <button type="button" class="btn btn-secondary" onclick="location.reload()">
+                                        Clear Cart
+                                    </button>
+                                    <a class="btn btn-primary" onclick="openWhatsapp()">
+                                        Order Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="momos">
+                        <div class="row menuHeading">
+                            <div class="col-12">
+                                <h1>Fruit and vegetables</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-12">
+                                <div class="card">
+                                    <h2 class="card-title">Fruits</h2>
+                                    <div class="card-body">
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Berries
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 80
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Tropical fruits
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 90
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Apple
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 115
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Blueberries
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 130
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Pears
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 90
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Banana
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 130
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Avocado
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 140
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Grape
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 130
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-12">
+                                <div class="card">
+                                    <h2 class="card-title">vegetables</h2>
+                                    <div class="card-body">
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Onion
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 125
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Garlic
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 135
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Shallot
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 145
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Lady's finger
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 160
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Mushroom
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 135
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Spinach
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 155
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Cabbage
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 170
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Beans
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 155
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row checkOutRow">
+                            <button type="button" class="btn knowMoreBtn" data-toggle="modal"
+                                data-target="#exampleModal">
+                                <i class="fas fa-shopping-cart"></i> Go to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="chinese">
+                        <div class="row menuHeading">
+                            <div class="col-12">
+                                <h1>Chinese</h1>
+                            </div>
+                            <!-- Button trigger modal -->
+                            <span class="shoppingCart" data-toggle="modal" data-target="#exampleModal">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="shoppingCartAfter">0</span>
+                            </span>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="card">
+                                    <h2 class="card-title">Rice and Noodles</h2>
+                                    <div class="card-body">
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Veg Hakka Noodles
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 200
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Chilli Garlic Noodles
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 210
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Steamed Rice<span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 190
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Corn Fried Rice
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 230
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Chicken Hakka Noodles
+                                                    <span>
+                                                        <img class="nonVegIcon" src="./images/non-veg.webp"
+                                                            alt="non-veg icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 220
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Chicken Garlic Noodles
+                                                    <span>
+                                                        <img class="nonVegIcon" src="./images/non-veg.webp"
+                                                            alt="non-veg icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 230
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Chicken Fried Rice
+                                                    <span>
+                                                        <img class="nonVegIcon" src="./images/non-veg.webp"
+                                                            alt="non-veg icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 230
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Mix Meat Fried Rice
+                                                    <span>
+                                                        <img class="nonVegIcon" src="./images/non-veg.webp"
+                                                            alt="non-veg icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 300
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="card">
+                                    <h2 class="card-title">Appetizers</h2>
+                                    <div class="card-body">
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Chilli Potato<span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 250
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Veg Spring Roll
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 270
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Chilli Paneer
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 280
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Chicken Spring Roll
+                                                    <span>
+                                                        <img class="nonVegIcon" src="./images/non-veg.webp"
+                                                            alt="non-veg icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 300
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Crispy Honey Chicken<span>
+                                                        <img class="nonVegIcon" src="./images/non-veg.webp"
+                                                            alt="non-veg icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 350
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Cantonese Spring Rolls<span>
+                                                        <img class="nonVegIcon" src="./images/non-veg.webp"
+                                                            alt="non-veg icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 400
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Baked Chicken Wings<span>
+                                                        <img class="nonVegIcon" src="./images/non-veg.webp"
+                                                            alt="non-veg icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 420
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Crab Rangoon<span>
+                                                        <img class="nonVegIcon" src="./images/non-veg.webp"
+                                                            alt="non-veg icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 540
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row foodItem"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card">
+                                    <h2 class="card-title">Main Course</h2>
+                                    <div class="card-body">
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Veg Garlic Sauce<span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 350
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Veg Garlic Sauce
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 350
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Potato Garlic Sauce
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 350
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Mixed Vegetable Sauce
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 370
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Stir Fried Asian Green<span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 370
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Burnt Garlic Rice
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 395
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Creamy Noodles
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 250
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Shredded Chicken
+                                                    <span>
+                                                        <img class="nonVegIcon" src="./images/non-veg.webp"
+                                                            alt="non-veg icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 640
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row checkOutRow">
+                            <button type="button" class="btn knowMoreBtn" data-toggle="modal"
+                                data-target="#exampleModal">
+                                <i class="fas fa-shopping-cart"></i> Go to Cart
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="beverages">
+                        <div class="row menuHeading">
+                            <div class="col-12">
+                                <h1>Beverages</h1>
+                            </div>
+                            <!-- Button trigger modal -->
+                            <span class="shoppingCart" data-toggle="modal" data-target="#exampleModal">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="shoppingCartAfter">0</span>
+                            </span>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-12">
+                                <div class="card">
+                                    <h2 class="card-title">Soups</h2>
+                                    <div class="card-body">
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Veg Manchow
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 150
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Sweet Corn
+                                                    <span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 150
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Hot 'N' Sour<span>
+                                                        <img class="vegIcon" src="./images/veg.webp" alt="veg-icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 150
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Chicken Manchow
+                                                    <span>
+                                                        <img class="nonVegIcon" src="./images/non-veg.webp"
+                                                            alt="non-veg icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 170
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Chicken Sweet Corn
+                                                    <span>
+                                                        <img class="nonVegIcon" src="./images/non-veg.webp"
+                                                            alt="non-veg icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 170
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>
+                                                    Chicken Hot 'N' Sour
+                                                    <span>
+                                                        <img class="nonVegIcon" src="./images/non-veg.webp"
+                                                            alt="non-veg icon" />
+                                                    </span>
+                                                </p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 170
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-12">
+                                <div class="card">
+                                    <h2 class="card-title">Mocktails</h2>
+                                    <div class="card-body">
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>Midnight Beauty</p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 120
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>Mojito</p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 150
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>Pink Lemonade</p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 140
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>Silver Lining</p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 140
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>Sweet Memories</p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 150
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <hr class="foodItemHr" />
+                                        <div class="row foodItem">
+                                            <div class="col-9 foodItemName">
+                                                <p>Virgin Mojito</p>
+                                                <p class="text-muted-small">
+                                                    <b>₹</b> 230
+                                                </p>
+                                            </div>
+                                            <div class="col-3 addCol">
+                                                <span class="menuBtn minus"><i class="fas fa-minus"></i></span>
+                                                <span class="quantity">0</span>
+                                                <span class="menuBtn plus"><i class="fas fa-plus"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row checkOutRow">
+                            <button type="button" class="btn knowMoreBtn" data-toggle="modal"
+                                data-target="#exampleModal">
+                                <i class="fas fa-shopping-cart"></i> Go to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="healthySection">
+            <h1 class="hygiene-title">
+                <img src="images/BioHygiene-logo.webp" width="250px">
+            </h1>
+            <div class="eatSure container">
+                <div class="row">
+                    <div class="col-sm-2 col-12">
+                        <img src="https://assets.faasos.io/ovenstory-react.in/production/eat-sure-mobile.png"
+                            alt="eat-sure logo" />
+                    </div>
+
+                    <div class="col-sm-2 col-6 borderLeft">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1"
+                                enable-background="new 0 0 515.556 515.556" height="512px" viewBox="0 0 515.556 515.556"
+                                width="512px">
+                                <g>
+                                    <path
+                                        d="m0 274.226 176.549 176.886 339.007-338.672-48.67-47.997-290.337 290-128.553-128.552z"
+                                        data-original="#000000" class="active-path" data-old_color="#000000"
+                                        fill="#FFFFFF"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="text">Medically Certified Kitchen Staff</div>
+                    </div>
+
+                    <div class="col-sm-2 col-6 borderLeft">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1"
+                                enable-background="new 0 0 515.556 515.556" height="512px" viewBox="0 0 515.556 515.556"
+                                width="512px">
+                                <g>
+                                    <path
+                                        d="m0 274.226 176.549 176.886 339.007-338.672-48.67-47.997-290.337 290-128.553-128.552z"
+                                        data-original="#000000" class="active-path" data-old_color="#000000"
+                                        fill="#FFFFFF"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="text">200+ Stringent Quality Checks</div>
+                    </div>
+
+                    <div class="col-sm-2 col-6 borderLeft">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1"
+                                enable-background="new 0 0 515.556 515.556" height="512px" viewBox="0 0 515.556 515.556"
+                                width="512px">
+                                <g>
+                                    <path
+                                        d="m0 274.226 176.549 176.886 339.007-338.672-48.67-47.997-290.337 290-128.553-128.552z"
+                                        data-original="#000000" class="active-path" data-old_color="#000000"
+                                        fill="#FFFFFF"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="text">No Artificial Colours or Flavours</div>
+                    </div>
+
+                    <div class="col-sm-2 col-6 borderLeft">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1"
+                                enable-background="new 0 0 515.556 515.556" height="512px" viewBox="0 0 515.556 515.556"
+                                width="512px">
+                                <g>
+                                    <path
+                                        d="m0 274.226 176.549 176.886 339.007-338.672-48.67-47.997-290.337 290-128.553-128.552z"
+                                        data-original="#000000" class="active-path" data-old_color="#000000"
+                                        fill="#FFFFFF"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="text">Double Sealed Packaging <br /><br /></div>
+                    </div>
+
+                    <div class="col-sm-2 col-12 borderLeft">
+                        <a href="#" target="#" class="btn knowMoreBtn">Know More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container safetyMeasuresDiv">
+                <p class="safetyMeasuresPara">
+                    While we have always followed hygiene regime at STREET FOOD, we have taken
+                    <br />
+                    a few specific measures at these times.
+                </p>
+                <div class="row safetyMeasures">
+                    <div class="col-sm-3 col-6">
+                        <img src="./svg/mask.svg"
+                            alt="Our Kitchen executives have been instructed to wear masks at all times." />
+                        <p>
+                            Our Kitchen executives have been instructed to wear masks at all
+                            times.
+                        </p>
+                    </div>
+
+                    <div class="col-sm-3 col-6">
+                        <img src="./svg/thermo.svg"
+                            alt="A daily log of our executives’ body temperatures is being maintained." />
+                        <p>
+                            A daily log of our executives’ body temperatures is being <br />
+                            maintained.
+                        </p>
+                    </div>
+
+                    <div class="col-sm-3 col-6">
+                        <img src="./svg/sanitizer.svg"
+                            alt="Every kitchen executive sanitizes his/her hands every hour." />
+                        <p>
+                            Every kitchen executive sanitizes his/her hands every hour.
+                            <br /><br />
+                        </p>
+                    </div>
+
+                    <div class="col-sm-3 col-6">
+                        <img src="./svg/clean.svg"
+                            alt="Every kitchen surface is rigorously cleaned to ensure a clean and sanitized workstation." />
+                        <p>
+                            Every kitchen surface is rigorously cleaned to ensure a clean and
+                            sanitized workstation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section id="healthySection" class="testimonials">
+            <h1 class="hygiene-title">
+                <span><b>TESTIMONIALS</b></span>
+            </h1>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10 col-xl-8 text-center">
+                    <p class="mb-4 pb-2 mb-md-5 pb-md-0">STREET FOOD Testimonial</p>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-4 mb-5 mb-md-0">
+                    <div class="d-flex justify-content-center mb-4">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                            class="rounded-circle shadow-1-strong" width="150" height="150" alt="person" />
+                    </div>
+                    <h5 class="mb-3">Maria Smantha</h5>
+                    <p class="px-xl-3">
+                        <i class="fas fa-quote-left pe-2"></i>
+                        Good Service, fast Delivery and amazing taste.
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-5 mb-md-0">
+                    <div class="d-flex justify-content-center mb-4">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                            class="rounded-circle shadow-1-strong" width="150" height="150" alt="person" />
+                    </div>
+                    <h5 class="mb-3">Lisa Cudrow</h5>
+                    <p class="px-xl-3">
+                        <i class="fas fa-quote-left pe-2"></i>Faster Delivery & Fresh food.
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-0">
+                    <div class="d-flex justify-content-center mb-4">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                            class="rounded-circle shadow-1-strong" width="150" height="150" alt="person" />
+                    </div>
+                    <h5 class="mb-3">John Smith</h5>
+                    <p class="px-xl-3">
+                        <i class="fas fa-quote-left pe-2"></i>Awesome Taste
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0">
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-star fa-sm text-warning"></i>
+                        </li>
+                        <li>
+                            <i class="far fa-star fa-sm text-warning"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER STARTS HERE -->
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 footerHeadingCol">
+                        <h2>STREET FOOD</h2>
+                    </div>
+
+                    <div class="col-3 socialMedia">
+                        <a href="https://www.facebook.com/" class="socialMediaIcon">
+                            <span><i class="fab fa-facebook-f"></i></span></a>
+                        <a href="https://www.twitter.com/" class="socialMediaIcon">
+                            <span><i class="fab fa-twitter"></i></span></a>
+                        <a href="https://www.instagram.com/" class="socialMediaIcon">
+                            <span><i class="fab fa-instagram"></i></span></a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="socialMediaIcon">
+                            <span><i class="fab fa-linkedin"></i></span></a>
+                    </div>
+                </div>
+
+                <div class="row contactRow">
+                    <p>
+                        <a class="footer_clickable" href="./policy.html">Policies</a> |
+                        <a class="footer_clickable" href="./terms_of_service.html">Terms of Service</a>
+                        |
+                        <!-- <a class="footer_clickable" href="tel:+919871198882">Contact Us</a> -->
+                        <a class="footer_clickable" href="./contactus.html">Contact Us</a>
+                    </p>
+                </div>
+
+                <div class="row copyrightRow">
+                    <p class="copyright">&copy; Copyright STREET FOOD All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- BOOTSTRAP JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- FONT AWESOME JS -->
+    <script src="https://kit.fontawesome.com/9f6e489cf7.js" crossorigin="anonymous"></script>
+    <!-- JQUERY CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="./index.js"></script>
 </body>
+<!-- BOOTSTRAP JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+<!-- JQUERY CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- CUSTOM JS -->
+<script src="./index.js"></script>
+<script>
+    $(window).on("load", function () {
+        $("#loading").hide();
+    });
+</script>
+
 </html>
